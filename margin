@@ -1,0 +1,39 @@
+.margin-one-value (@marginValue) {
+  @marginremValue: (@marginValue);
+  @marginpxValue: (@marginValue * 10);
+  margin: ~"@{marginpxValue}px";
+  margin: ~"@{marginremValue}rem";
+}
+
+.margin-two-values (@marginY,@marginX) {
+  @marginremY: (@marginY);
+  @marginremX: (@marginX);
+  @marginpxY: (@marginY * 10);
+  @marginpxX: (@marginX * 10);
+  margin: ~"@{marginpxY}px" ~"@{marginpxX}px";
+  margin: ~"@{marginremY}rem" ~"@{marginremX}rem";
+}
+
+.margin-three-values (@marginY,@marginX,@marginYY) {
+  @marginremY: (@marginY);
+  @marginremX: (@marginX);
+  @marginremYY: (@marginYY);
+  @marginpxY: (@marginY * 10);
+  @marginpxX: (@marginX * 10);
+  @marginpxYY: (@marginYY * 10);
+  margin: ~"@{marginpxY}px" ~"@{marginpxX}px" ~"@{marginpxYY}px";
+  margin: ~"@{marginremY}rem" ~"@{marginremX}rem" ~"@{marginremYY}rem";
+}
+
+.margin-four-values (@marginY,@marginX,@marginYY,@marginXX) {
+  @marginremY: (@marginY);
+  @marginremX: (@marginX);
+  @marginremYY: (@marginYY);
+  @marginremXX: (@marginXX);
+  @marginpxY: (@marginY * 10);
+  @marginpxX: (@marginX * 10);
+  @marginpxYY: (@marginYY * 10);
+  @marginpxXX: (@marginXX * 10);
+  margin: ~"@{marginpxY}px" ~"@{marginpxX}px" ~"@{marginpxYY}px" ~"@{marginpxXX}px";
+  margin: ~"@{marginremY}rem" ~"@{marginremX}rem" ~"@{marginremYY}rem" ~"@{marginremXX}rem";
+}
