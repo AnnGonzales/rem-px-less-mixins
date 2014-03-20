@@ -1,0 +1,39 @@
+.padding-one-value (@paddingValue) {
+  @paddingremValue: (@paddingValue);
+  @paddingpxValue: (@paddingValue * 10);
+  padding: ~"@{paddingpxValue}px";
+  padding: ~"@{paddingremValue}rem";
+}
+
+.padding-two-values (@paddingY,@paddingX) {
+  @paddingremY: (@paddingY);
+  @paddingremX: (@paddingX);
+  @paddingpxY: (@paddingY * 10);
+  @paddingpxX: (@paddingX * 10);
+  padding: ~"@{paddingpxY}px" ~"@{paddingpxX}px";
+  padding: ~"@{paddingremY}rem" ~"@{paddingremX}rem";
+}
+
+.padding-three-values (@paddingY,@paddingX,@paddingYY) {
+  @paddingremY: (@paddingY);
+  @paddingremX: (@paddingX);
+  @paddingremYY: (@paddingYY);
+  @paddingpxY: (@paddingY * 10);
+  @paddingpxX: (@paddingX * 10);
+  @paddingpxYY: (@paddingYY * 10);
+  padding: ~"@{paddingpxY}px" ~"@{paddingpxX}px" ~"@{paddingpxYY}px";
+  padding: ~"@{paddingremY}rem" ~"@{paddingremX}rem" ~"@{paddingremYY}rem";
+}
+
+.padding-four-values (@paddingY,@paddingX,@paddingYY,@paddingXX) {
+  @paddingremY: (@paddingY);
+  @paddingremX: (@paddingX);
+  @paddingremYY: (@paddingYY);
+  @paddingremXX: (@paddingXX);
+  @paddingpxY: (@paddingY * 10);
+  @paddingpxX: (@paddingX * 10);
+  @paddingpxYY: (@paddingYY * 10);
+  @paddingpxXX: (@paddingXX * 10);
+  padding: ~"@{paddingpxY}px" ~"@{paddingpxX}px" ~"@{paddingpxYY}px" ~"@{paddingpxXX}px";
+  padding: ~"@{paddingremY}rem" ~"@{paddingremX}rem" ~"@{paddingremYY}rem" ~"@{paddingremXX}rem";
+}
